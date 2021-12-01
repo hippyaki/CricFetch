@@ -1,4 +1,3 @@
-
 from boltiot import Bolt
 import bolt_conf
 import json, requests, time
@@ -42,8 +41,8 @@ while True:
     #print(line)
 
     batsman_name = str(line['miniscore']['batsmanStriker']['batName'])
-    batsman_six_1 = str(line['miniscore']['batsmanStriker']['batSixes'])
-    batsman_four_1 = str(line['miniscore']['batsmanStriker']['batFours'])
+    batsman_six_1 = int(line['miniscore']['batsmanStriker']['batSixes'])
+    batsman_four_1 =int(line['miniscore']['batsmanStriker']['batFours'])
 
     print(".")
     print(".") 
@@ -57,7 +56,7 @@ while True:
         print(".")
         print("Hi !!"+ batsman_name, " has scored ", batsman_six_1, "sixes ..")
         
-        batsman_six_1 = batsman_six_0
+        batsman_six_0 = batsman_six_1
 
 
     if batsman_four_1>batsman_four_0:
@@ -69,7 +68,7 @@ while True:
         print(".") 
         print("Hi !!"+ batsman_name, " has scored ", batsman_four_1, "fours ..")
         
-        batsman_four_1 = batsman_four_0
+        batsman_four_0 = batsman_four_1
 
     
     time.sleep(3)
