@@ -8,7 +8,7 @@ match = str(input("Enter Match ID: "))
 
 url = base_url + match
 
-batsman_six_0 = 0
+batsman_runs_0 = 0
 
 while True:
 
@@ -21,17 +21,17 @@ while True:
 
     batsman_name = str(line['miniscore']['batsmanStriker']['batName'])
 
-    batsman_six_1 = str(line['miniscore']['batsmanStriker']['batSixes'])
+    #batsman_six_1 = int(line['miniscore']['batsmanStriker']['batSixes'])
+
+    batsman_runs_1 = int(line['miniscore']['batsmanStriker']['batRuns'])
 
 
     print(".")
-    print(".")
-
-
-    if batsman_six_1>batsman_six_0:
+    
+    if batsman_runs_1>batsman_runs_0:
         
-        print("Hi !!"+ batsman_name, " has scored ", batsman_six_1, "sixes ..")
+        print("Hi !!"+ batsman_name, " has scored ", batsman_runs_1, "runs ..")
         
-        batsman_six_1 = batsman_six_0
+        batsman_runs_0 = batsman_runs_1
     
     time.sleep(3)
