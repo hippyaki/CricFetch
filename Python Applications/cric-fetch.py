@@ -16,12 +16,8 @@ while True:
 
     line = json.loads(response.text)
     #print(line)
- 
-
 
     batsman_name = str(line['miniscore']['batsmanStriker']['batName'])
-
-    #batsman_six_1 = int(line['miniscore']['batsmanStriker']['batSixes'])
 
     batsman_runs_1 = int(line['miniscore']['batsmanStriker']['batRuns'])
 
