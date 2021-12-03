@@ -1,5 +1,5 @@
 import json, requests, time
-from boltiot import Sms, Bolt
+from boltiot import Bolt
 import bolt_conf
 
 mybolt = Bolt(bolt_conf.API_KEY, bolt_conf.DEVICE_ID)
