@@ -1,7 +1,7 @@
 # CricFetch
 Python and Javascript Application for fetching LIVE scores of Cricket.
 
-(Not so Public APIs) to use for Cricket - 
+(Not so Public APIs) to use for Cricket Scores - 
 1. https://www.cricbuzz.com/api/cricket-match/commentary/buzz-match-id
 2. https://api.icc.cdp.pulselive.com/commentary/ICC/icc-match-id/EN/newerThan/time-stamp
 
